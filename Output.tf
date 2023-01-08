@@ -20,13 +20,13 @@ output "localvar1" {
 output "localvar2" {
   value = local.var2
 }
-/*output "publicip" {
+output "publicip" {
   value = aws_instance.ec2instance.public_ip
 }
 
 output "privateip" {
   value = aws_instance.ec2instance.private_ip
-}*/
+}
 
 output "forlistout" {
   value = [for s in var.forlist: upper(s) if s != ""]
