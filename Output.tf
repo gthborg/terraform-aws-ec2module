@@ -13,13 +13,13 @@ output "security_group_name" {
 output "my_security_group_name" {
   value = data.aws_security_group.mysg.id
 }
-output "localvar1" {
+/*output "localvar1" {
   value = local.var1
 }
 
 output "localvar2" {
   value = local.var2
-}
+}*/
 output "publicip" {
   value = aws_instance.ec2instance.*.public_ip
 }
